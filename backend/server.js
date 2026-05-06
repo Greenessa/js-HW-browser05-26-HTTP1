@@ -17,22 +17,21 @@ const timestamp = Date.now();
 const date = new Date(timestamp);
 let createDate = date.toLocaleString();
 
-let tickets = [
-  {
-    id: uuidv4(),
-    name: 'Поменять краску в принтере',
-    description: 'В комнате 404 поменять краску в принтере HP и проверить картридж во втором принтере',
-    status: false,
-    created: createDate,
-  },
-  {
-    id: uuidv4(),
-    name: 'Установить обновление',
-    description: 'Вышло критическое обновление Windows, надо обновить сервер, предварительно сделав бэкап',
-    status: false,
-    created: createDate,
-  },
-];
+let tickets = [];
+  // {
+  //   id: uuidv4(),
+  //   name: 'Поменять краску в принтере',
+  //   description: 'В комнате 404 поменять краску в принтере HP и проверить картридж во втором принтере',
+  //   status: false,
+  //   created: createDate,
+  // },
+  // {
+  //   id: uuidv4(),
+  //   name: 'Установить обновление',
+  //   description: 'Вышло критическое обновление Windows, надо обновить сервер, предварительно сделав бэкап',
+  //   status: false,
+  //   created: createDate,
+  // }
 
 app.use(async (ctx) => {
   const { method, id } = ctx.request.query;

@@ -58,10 +58,12 @@ export default class ManageList {
   loadList() {
     this.getAllTickets().then((tickets) => {
       // console.log(tickets);
-      this.listState.toDoArray = tickets;
-      // console.log(this.listState.toDoArray);
-      this.outputGoodsList(this.listState.toDoArray);
-      this.addActListeners();
+      if (tickets) {
+        this.listState.toDoArray = tickets;
+        // console.log(this.listState.toDoArray);
+        this.outputGoodsList(this.listState.toDoArray);
+        this.addActListeners();
+      }
     });
   }
 
