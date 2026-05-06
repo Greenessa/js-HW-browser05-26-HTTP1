@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/wmb28c1jj7l9bn2t?svg=true)](https://ci.appveyor.com/project/Greenessa/js-hw-browser05-26-http1)
