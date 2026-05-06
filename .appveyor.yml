@@ -24,4 +24,6 @@ test: off
 
 
 deploy_script:
+  - git config --global user.email "appveyor@example.com"
+  - git config --global user.name "AppVeyor"
   - npm run deploy
