@@ -20,7 +20,7 @@ build_script:
 # test_script:
 #   - npm run lint && npm test  # скрипт тестирования
 
-test_script: off
+test: off
 
 
 deploy_script:
